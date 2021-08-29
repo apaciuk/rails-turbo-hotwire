@@ -25,13 +25,13 @@ default: &default
 
 development:
   <<: *default
-  database: turbo_hotwire_development
+  database: hotwire_chat_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: turbo_hotwire
+  #username: hotwire_chat
 
   # The password associated with the postgres role (username).
   #password:
@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: turbo_hotwire_test
+  database: hotwire_chat_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: turbo_hotwire_production
-  username: turbo_hotwire
-  password: <%= ENV['TURBO_HOTWIRE_DATABASE_PASSWORD'] %>
+  database: hotwire_chat_production
+  username: hotwire_chat
+  password: <%= ENV['HOTWIRE_CHAT_DATABASE_PASSWORD'] %>
