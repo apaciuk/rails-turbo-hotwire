@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Books</h1>
+<% turbo_stream_from "books" %>
+
+<%= turbo_frame_tag "books" do %>
+<%= render @books %>
+<% end %>
+
+<br>
+
+<%= link_to 'New Book', new_book_path %>
